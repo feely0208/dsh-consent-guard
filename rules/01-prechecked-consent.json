@@ -1,0 +1,14 @@
+{
+  "id": "CONSENT-PRECHECKED",
+  "title": "同意勾选框默认勾选",
+  "severity": "high",
+  "source": "《个人信息保护法》第十四条 —— 同意应当由个人在充分知情的前提下自愿、明确作出；《App 违法违规收集使用个人信息行为认定方法》—— 「未经用户同意收集使用个人信息」；GDPR Art.7 / Recital 32 —— 预先勾选不构成有效同意",
+  "advice": "同意勾选框被默认勾上，意味着用户**什么都不做就已经同意**了 —— 这不是「自愿、明确作出」，监管认定时通常直接判违规。改成默认不勾选，这是最省事的合规修复之一。",
+  "check": {
+    "type": "file-pattern",
+    "pattern": "(agree|consent|privacy|terms|authorize|同意|授权|隐私)[\\w-]*[\"']?[^>\\n]{0,80}(defaultChecked|checked\\s*[:=]\\s*\\{?\\s*true|defaultValue\\s*[:=]\\s*true)",
+    "flags": "gi",
+    "exts": [".js", ".mjs", ".cjs", ".ts", ".tsx", ".jsx", ".html", ".vue", ".svelte", ".xml", ".wxml"],
+    "max": 20
+  }
+}

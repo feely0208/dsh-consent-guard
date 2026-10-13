@@ -1,0 +1,14 @@
+{
+  "id": "CONSENT-NO-WITHDRAW",
+  "title": "找不到撤回同意的入口",
+  "severity": "medium",
+  "source": "《个人信息保护法》第十五条 —— 个人有权撤回其同意，个人信息处理者应当提供便捷的撤回同意的方式",
+  "advice": "代码里能找到「同意」的相关实现，但找不到「撤回/关闭授权」的入口。个保法要求撤回方式必须**便捷** —— 常见的做法是在设置页提供开关，且撤回后应停止处理。",
+  "check": {
+    "type": "file-lacks",
+    "pattern": "撤回|撤销同意|withdraw|revoke|关闭授权|cancelConsent|opt[-_ ]?out|退出授权|取消授权",
+    "flags": "i",
+    "paths": ["**/*.js", "**/*.mjs", "**/*.ts", "**/*.tsx", "**/*.jsx", "**/*.vue", "**/*.html", "**/*.py", "**/*.java", "**/*.kt", "**/*.swift"],
+    "evidence": "代码里找不到撤回同意的入口"
+  }
+}

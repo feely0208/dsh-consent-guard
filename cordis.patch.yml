@@ -1,0 +1,4 @@
+# @deepwhale-cn/dsh-consent-guard 的组合层
+- insert:
+    - id: consent-guard
+      name: '@deepwhale-cn/dsh-consent-guard'
