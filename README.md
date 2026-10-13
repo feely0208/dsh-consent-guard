@@ -1,5 +1,7 @@
 # @deepwhale-cn/dsh-consent-guard
 
+[![Listed on dsh-plugin.org](https://dsh-plugin.org/badges/listed.svg)](https://dsh-plugin.org/plugins/feely0208/dsh-consent-guard)
+
 **用户同意与授权确认** —— 查默认勾选、捆绑同意、没有撤回入口。
 
 ## 不装它会怎样
