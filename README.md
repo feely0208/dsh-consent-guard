@@ -49,7 +49,7 @@ dsh-consent-guard --list-rules
 dsh-consent-guard --html r.html
 ```
 
-![dsh-consent-guard 的检查报告示例](https://raw.githubusercontent.com/feely0208/dsh-consent-guard/main/docs/report.png)
+![dsh-consent-guard 的检查报告示例](https://www.deepwhale.org.cn/plugin-assets/dsh-consent-guard/report.png)
 
 ## 边界
 
