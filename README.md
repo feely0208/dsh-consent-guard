@@ -49,7 +49,11 @@ dsh-consent-guard --list-rules
 dsh-consent-guard --html r.html
 ```
 
-![dsh-consent-guard 的检查报告示例](https://www.deepwhale.org.cn/plugin-assets/dsh-consent-guard/report.png)
+![dsh-consent-guard 检查报告示例](https://www.deepwhale.org.cn/plugin-assets/dsh-consent-guard/report.png)
+
+![dsh-consent-guard 演示模式输出](https://www.deepwhale.org.cn/plugin-assets/dsh-consent-guard/demo.png)
+
+![dsh-consent-guard 规则与依据](https://www.deepwhale.org.cn/plugin-assets/dsh-consent-guard/rules.png)
 
 ## 边界
 
