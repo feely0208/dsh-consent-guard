@@ -1,0 +1,60 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+<style>
+  * { box-sizing: border-box; }
+  body { margin:0; background:#0d0f13; display:flex; justify-content:center;
+         align-items:flex-start; padding:22px; font-family:-apple-system,"PingFang SC",
+         "Helvetica Neue",sans-serif; }
+  .win { width:1180px; border-radius:11px; overflow:hidden;
+          box-shadow:0 14px 44px rgba(0,0,0,.55); }
+  .bar { background:#2a2d34; padding:11px 15px; display:flex; align-items:center; gap:9px; }
+  .dot { width:12px; height:12px; border-radius:50%; }
+  .t { margin-left:11px; color:#7a8290; font-size:13px; letter-spacing:.02em; }
+  .term { background:#1b1d22; padding:20px 22px 24px; font-family:"SF Mono",Menlo,Consolas,
+           "PingFang SC",monospace; font-size:13.5px; line-height:1.72; }
+  .cmd { color:#5ee08a; margin-bottom:13px; font-size:13.5px; }
+  .cmd b { color:#fff; font-weight:600; }
+  .l { white-space:pre-wrap; word-break:break-word; }
+</style></head><body>
+  <div class="win">
+    <div class="bar">
+      <span class="dot" style="background:#ff5f57"></span>
+      <span class="dot" style="background:#febc2e"></span>
+      <span class="dot" style="background:#28c840"></span>
+      <span class="t">dsh-consent-guard · demo</span>
+    </div>
+    <div class="term">
+      <div class="cmd">$ <b>dsh-consent-guard --demo</b></div>
+      <div class="l"><span style="color:#7a8290">&nbsp;</span></div>
+<div class="l"><span style="color:#d8dee9">  【演示模式】使用内置样本，不是你的真实项目。</span></div>
+<div class="l"><span style="color:#7a8290">&nbsp;</span></div>
+<div class="l"><span style="color:#7a8290">&nbsp;</span></div>
+<div class="l"><span style="color:#d8dee9">  深鲸守护 · 用户同意与授权确认 v0.1.0</span></div>
+<div class="l"><span style="color:#d8dee9">  ──────────────────────────────────────────────────────────────────</span></div>
+<div class="l"><span style="color:#d8dee9">  扫描范围   内置演示样本 · 故意有问题的项目</span></div>
+<div class="l"><span style="color:#d8dee9">             3 个文件 · 0 个目录已跳过</span></div>
+<div class="l"><span style="color:#d8dee9">  检查规则   4/4 条</span></div>
+<div class="l"><span style="color:#ffd166">  命中       3 条</span></div>
+<div class="l"><span style="color:#7a8290">&nbsp;</span></div>
+<div class="l"><span style="color:#ff6b6b">  【高】1 条</span></div>
+<div class="l"><span style="color:#7a8290">    · 同意勾选框默认勾选</span></div>
+<div class="l"><span style="color:#d8dee9">      位置  Consent.jsx:5</span></div>
+<div class="l"><span style="color:#7a8290">      证据  agreePrivacy&quot; defaultChecked</span></div>
+<div class="l"><span style="color:#7a8290">      依据  《个人信息保护法》第十四条 —— 同意应当由个人在充分知情的前提下自愿、明确作出；《App 违法违规收集使用个人信息行为认定方法》—— 「未经用户同意收集使用个人信息」；GDPR Art.7 / Recital 32 —— 预先勾选不构成有效同意</span></div>
+<div class="l"><span style="color:#d8dee9">      建议  同意勾选框被默认勾上，意味着用户**什么都不做就已经同意**了 —— 这不是「自愿、明确作出」，监管认定时通常直接判违规。改成默认不勾选，这是最省事的合规修复之一。</span></div>
+<div class="l"><span style="color:#7a8290">&nbsp;</span></div>
+<div class="l"><span style="color:#ffd166">  【中】2 条</span></div>
+<div class="l"><span style="color:#7a8290">    · 同意与其他事项捆绑在一起</span></div>
+<div class="l"><span style="color:#d8dee9">      位置  Consent.jsx:6</span></div>
+<div class="l"><span style="color:#7a8290">      证据  同意隐私政策和营销推广</span></div>
+<div class="l"><span style="color:#7a8290">      依据  《个人信息保护法》第十六条 —— 不得以个人不同意处理其个人信息或者撤回同意为由，拒绝提供产品或者服务（处理个人信息属于提供产品或服务所必需的除外）；第十七条 —— 应区分必要与非必要</span></div>
+<div class="l"><span style="color:#d8dee9">      建议  把「同意隐私政策」和「同意营销推送」「同意第三方共享」放进同一个勾选框，用户无法只同意必要的部分 —— 这属于以捆绑方式取得同意。拆成独立勾选框，且非必要的默认不勾。</span></div>
+<div class="l"><span style="color:#7a8290">    · 找不到撤回同意的入口</span></div>
+<div class="l"><span style="color:#d8dee9">      位置  collect.js</span></div>
+<div class="l"><span style="color:#7a8290">      证据  代码里找不到撤回同意的入口</span></div>
+<div class="l"><span style="color:#7a8290">      依据  《个人信息保护法》第十五条 —— 个人有权撤回其同意，个人信息处理者应当提供便捷的撤回同意的方式</span></div>
+<div class="l"><span style="color:#d8dee9">      建议  代码里能找到「同意」的相关实现，但找不到「撤回/关闭授权」的入口。个保法要求撤回方式必须**便捷** —— 常见的做法是在设置页提供开关，且撤回后应停止处理。</span></div>
+<div class="l"><span style="color:#7a8290">&nbsp;</span></div>
+<div class="l"><span style="color:#d8dee9">  ──────────────────────────────────────────────────────────────────</span></div>
+    </div>
+  </div>
+</body></html>

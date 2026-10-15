@@ -1,6 +1,6 @@
 {
   "name": "@deepwhale-cn/dsh-consent-guard",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "查同意机制是否合规：默认勾选、捆绑同意、没有撤回入口 —— 个保法有明确要求",
   "type": "module",
   "license": "MIT",
@@ -22,12 +22,13 @@
   ],
   "files": [
     "lib",
-    "skill",
     "bin",
     "rules",
-    "docs",
+    "skill",
     "cordis.patch.yml",
-    "README.md"
+    "tests/fixtures",
+    "README.md",
+    "LICENSE"
   ],
   "main": "./lib/index.js",
   "exports": {
