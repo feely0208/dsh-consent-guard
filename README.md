@@ -3,6 +3,8 @@
 [![Listed on dsh-plugin.org](https://dsh-plugin.org/badges/listed.svg)](https://dsh-plugin.org/plugins/feely0208/dsh-consent-guard)
 
 
+**同意与撤回同意**：默认勾选、捆绑同意、没有撤回入口 —— 个保法有明确要求。
+
 **关键词**：用户同意 · 个人信息保护法 · 个保法 · 隐私政策 · 默认勾选 · 撤回同意 · 授权同意 · 隐私合规 · 单独同意
 **Keywords**: user consent · PIPL · privacy policy · pre-checked box · consent withdrawal · personal information protection law
 **用户同意与授权确认** —— 查默认勾选、捆绑同意、没有撤回入口。
