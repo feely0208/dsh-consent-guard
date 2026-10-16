@@ -62,7 +62,7 @@ dsh-consent-guard --html r.html
 - **只看代码，不看实际界面** —— 弹窗有没有真弹出来、用户能不能看懂，需人工验证。
 - **「找不到就报」的两条是弱信号** —— 撤回入口可能在服务端或另一个仓库。报出来是提示确认。
 - **不判断「必要性」** —— 某项采集是否属「提供服务所必需」是法律判断。
-- 与 [dsh-cn-pipl-check](https://github.com/feely0208/dsh-cn-skills) 分工：
+- 与 [dsh-bundle-cn-skills](https://github.com/feely0208/dsh-bundle-cn-skills) 分工：
   那个做**个保法逐条对照**（更全），这个**专做同意机制**（更深）。
 
 本插件是一个工具。使用者必须遵守所在地区法律法规，**对使用本项目造成的任何后果自行承担责任。**
