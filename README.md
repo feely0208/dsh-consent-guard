@@ -1,5 +1,7 @@
 # @deepwhale-cn/dsh-consent-guard
 
+[![dshfind 收录](https://dshfind.com/api/badge/feely0208/dsh-consent-guard?lang=zh)](https://dshfind.com/zh/plugins/feely0208/dsh-consent-guard)
+
 [![Listed on dsh-plugin.org](https://dsh-plugin.org/badges/listed.svg)](https://dsh-plugin.org/plugins/feely0208/dsh-consent-guard)
 
 
